@@ -1,6 +1,7 @@
 #MDunn Lab 9
 
-#GitHub Test Comment
+#GitHub test comment
+
 
 #Define Functions
 
@@ -46,22 +47,21 @@ while (x>0) and (x<4):
         IQ=int(input("Enter your IQ "))
         for i in range(IQ):
             print("It always seems impossible until it is done. – Nelson Mandela")
+    elif x==4:
+        print("Let's find out if you're lucky :D")
+        y=101
+        while (y != 67):
+            y = int(input("Enter a number between 0 and 100 "))
+            if (y<67):
+                print("Your guess is too low. Try again.")
+            if (y>67):
+                print("Your guess is too high. Try again.")
+            if (y ==67):
+                print("Winner, winner, chicken dinner")
+            if (y<0) or (y>100):
+                print("Your guess is not within the requested range.")  
     elif x==5:
        print("Insert the current temperature in Farenheit. ")
        f = float(input())
        c = convertFarenheit_Celcius(f)
        print (c)
-
-    elif x==4:
-        y=101
-        while (y>=0) and (y>=100):
-            y = float(input("Enter a number between 0 and 100 "))
-if (x<67):
-    y = float(input("Your guess is too low. Try again."))
-if (x>67):
-    y = float(input("Your guess is too high. Try again."))
-if (y == 67):
-    print("Winner, winner, chicken dinner")
-if (y<0) or (y>100):
-    print("Your guess is not within the requested range.")  
-
